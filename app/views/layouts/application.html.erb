@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <h1>The Header (visible on all pages)</h1>
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About us", about_path %></li>
+      <li><%= link_to "Contact us", contact_path %></li>
+      <li><%= link_to "Coach game", coach_path %></li>
+    </ul>
+
     <%= yield %>
+
+    <p>A very simple footer</p>  <!-- Add this -->
+
   </body>
 </html>

@@ -1,0 +1,18 @@
+<h1>Contact 🚀</h1>
+
+<p>Just to show how it works with embedded ruby. Check source.</p>
+<% evildoers = ['hitler', 'stalin', 'devil', 'magneto', 'rumsfeld'] %>
+
+<h2>Meet the softball team!<h2>
+<ol>
+<% evildoers.each do |member| %>
+<li>Bad Person!</li>
+<% end %>
+</ol>
+
+<h2>Meet the softball team!<h2>
+<ol>
+<% evildoers.each do |evildoer| %>
+<li><%= evildoer.capitalize %></li>
+<% end %>
+</ol>
