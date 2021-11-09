@@ -12,4 +12,7 @@ class PagesController < ApplicationController
       return params["Go to work."]
     end
   end
+  def answer
+
+  end
 end
