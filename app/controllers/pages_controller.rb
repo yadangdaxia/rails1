@@ -6,10 +6,11 @@ class PagesController < ApplicationController
   def contact
   end
   def coach
-    if params[:answer] != "I'm going to work."
-      return params["Good"]
+    question = params[:question]
+    if question == "I'm going to work."
+      params[:reply] = "Good."
     else
-      return params["Go to work."]
+      params[:reply] = "Go to work."
     end
   end
   def answer
