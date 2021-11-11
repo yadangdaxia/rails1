@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'coach', to: 'pages#coach'
+  get 'hello', to: 'greetings#hello'
+
+
 end
+# GET gets info from client - goes to pages controller to get action called coach

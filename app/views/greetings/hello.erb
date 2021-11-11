@@ -1,0 +1,8 @@
+<h2>Greeting</h2>
+<p>Write "I'm going to work."</p>
+<form action="/hello" method="get">
+  <input type="text" name="question" placeholder="Write something.">
+  <input type="submit" value="Submit">
+</form>
+<p>Coach response:</p>
+<input type="text" name="reply" value="<%= params[:reply] %>">
